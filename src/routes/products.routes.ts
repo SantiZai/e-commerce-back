@@ -1,18 +1,12 @@
 import { Router } from 'express'
 import * as productsController from '../controllers/productsController'
-import * as usersController from '../controllers/usersController'
 
-const router = Router()
+const pRouter = Router()
 
-router.get('/products/', productsController.getProducts)
-router.get('/products/:id', productsController.getProduct)
-router.post('/products/', productsController.createProduct)
-router.delete('/products/:id', productsController.deleteProduct)
-router.patch('/products/:id', productsController.updateProduct)
+pRouter.get('/', productsController.getProducts)
+pRouter.get('/:id', productsController.getProduct)
+pRouter.post('/', productsController.createProduct)
+pRouter.delete('/:id', productsController.deleteProduct)
+pRouter.patch('/:id', productsController.updateProduct)
 
-router.get('/users/', usersController.getUsers)
-router.get('/users/:id', usersController.getUser)
-router.post('/users/', usersController.createUser)
-router.delete('/users/:id', usersController.deleteUser)
-
-export default router
+export default pRouter

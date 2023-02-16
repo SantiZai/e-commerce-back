@@ -3,10 +3,10 @@ import * as usersController from '../controllers/usersController'
 
 const uRouter = Router()
 
-uRouter.get('/users/', usersController.getUsers)
-uRouter.get('/users/:id', usersController.getUser)
-uRouter.post('/users/', usersController.createUser)
-uRouter.delete('/users/:id', usersController.deleteUser)
+uRouter.get('/', usersController.getUsers)
+uRouter.get('/:id', usersController.getUser)
+uRouter.post('/', usersController.createUser)
+uRouter.delete('/:id', usersController.deleteUser)
 
 
-//export default uRouter
+export default uRouter

@@ -14,7 +14,6 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use('/api/products', products_routes_1.default);
 app.use('/api/users', users_routes_1.default);
-app.set('PORT', 3000);
 app.use((req, res, next) => {
     res.status(404).json({ message: 'Endpoint not found' });
 });
