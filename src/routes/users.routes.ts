@@ -9,4 +9,4 @@ uRouter.post('/users/', usersController.createUser)
 uRouter.delete('/users/:id', usersController.deleteUser)
 
 
-export default uRouter
+//export default uRouter
