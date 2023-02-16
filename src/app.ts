@@ -10,8 +10,8 @@ app.use(morgan('dev'))
 app.use(cors())
 app.use(express.json())
 
-app.use('/api/products', productsRoutes)
-app.use('/api/users', usersRoutes)
+app.use('/api', productsRoutes)
+app.use('/api', usersRoutes)
 
 app.set('PORT', 3000)
 
