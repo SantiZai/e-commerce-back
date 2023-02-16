@@ -1,5 +1,6 @@
 import database from './app'
+import { PORT } from './config'
 
-database.listen(database.get('PORT'), () => {
-    console.log(`Server on http://localhost:${database.get('PORT')}/api/products`)
+database.listen(PORT, () => {
+    console.log(`Server on http://localhost:${PORT}/api/`)
 })
